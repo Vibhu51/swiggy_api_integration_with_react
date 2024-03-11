@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import RestaurantDish from "../components/RestaurantDish";
 
-export default Cart = (props) => {
+const Cart = (props) => {
     const items = useSelector((store) => store.cart.items);
     console.log(items);
     return <div className="m-4 p-4">
@@ -11,3 +11,5 @@ export default Cart = (props) => {
         </div>
     </div>;
 };
+
+export default Cart;

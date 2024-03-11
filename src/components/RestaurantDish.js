@@ -17,7 +17,7 @@ const RestaurantDish = (props) => {
         <div>
         <div className="relative">
             <img className="w-28 h-28 " src={GET_CLOUDINARY_IMAGE+imageId} />
-            <button onClick={handleClick} className="absolute bottom-1 left-[35%] text-white bg-black rounded-md p-1 hover:scale-75 transition-all">Add +</button>
+            <button data-testid="addButton" onClick={handleClick} className="absolute bottom-1 left-[35%] text-white bg-black rounded-md p-1 hover:scale-75 transition-all">Add +</button>
         </div>
         </div>
     </div>;

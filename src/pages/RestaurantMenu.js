@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
     const {theme} = useContext(appContext);
     let darkThemeScheme = "bg-black text-white";
     let lightThemeScheme = "bg-light-100 text-black";
-    setAccordionIndexToActive = (index) => {
+    const setAccordionIndexToActive = (index) => {
         if (activeIndex === index) {
             setActiveIndex(null);
         } else {

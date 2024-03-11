@@ -20,7 +20,7 @@ const Body = () => {
 
     return  (<div className={`m-0 p -0 ${theme ? lightThemeScheme : darkThemeScheme}`}>
         <div className="mx-auto w-1/2 py-5">
-            <input className="px-4 border-2 border-black" type="text" value={searchText} onChange={(e) => setSearchText(e.target.value)} /> 
+            <input data-testid="searchBox" className="px-4 border-2 border-black" type="text" value={searchText} onChange={(e) => setSearchText(e.target.value)} /> 
         </div>
         <div className="flex flex-wrap px-8">
         {isLoading && Array.from(Array(10).keys()).map(d => <Shimmer key={d} cardColor={theme ? "bg-gray-100" : "bg-gray-800"}/>)}
